@@ -1,6 +1,6 @@
 ## Gabriel Shihao Chen Yin 10408981
 
-![alt text](image-1.png)
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/ac07a10c-6d66-4aef-8c21-c50de3e3e387)
 
 ## Como executar
 
