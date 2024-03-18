@@ -1,4 +1,4 @@
-## Gabriel Shihao Chen Yin 10408982
+## Gabriel Shihao Chen Yin 10408981
 
 ![image](https://github.com/gabrielyin/so-aws/assets/70323043/0d908a90-66e6-42ed-b871-25f5732950ba)
 
