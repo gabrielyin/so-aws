@@ -6,7 +6,7 @@
 
 int count = 100;
 
-static void *code_for_thread1(void *arg) {
+static void *thread(void *arg) {
   count = 40;
   printf("Valor da variável na thread alterado para  %d\n", count);
   return NULL;
@@ -18,7 +18,7 @@ int main(void) {
 
   pthread_t thread1;
 
-  pthread_create(&thread1, NULL, code_for_thread1, NULL);
+  pthread_create(&thread1, NULL, thread, NULL);
   pthread_join(thread1, NULL);
 
   printf("Valor da variável global no processo pai após a criação da thread: %d\n", count);
