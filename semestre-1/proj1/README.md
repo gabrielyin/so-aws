@@ -8,7 +8,7 @@
 8) TIMEOUT
 9) TIMEOUT
 10) TIMEOUT
-....
+até
 58) TIMEOUT
 
 1) Qual a estratégia que você utilizou para evitar que duas pessoas acessem a escada rolante ao mesmo tempo em cada abordagem?
