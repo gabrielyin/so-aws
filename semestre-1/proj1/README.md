@@ -14,6 +14,15 @@ até
 58) TIMEOUT
 
 
-##Qual a estratégia que você utilizou para evitar que duas pessoas acessem a escada rolante ao mesmo tempo em cada abordagem?
+Qual a estratégia que você utilizou para evitar que duas pessoas acessem a escada rolante ao mesmo tempo em cada abordagem?
 
 Para evitar que duas pessoas acessem a escada rolante ao mesmo tempo com threads eu criei uma variable global chamada direction que não permite que pessoas em direções diferentes acessem a escada rolante ao mesmo tempo. Uma variável global guarda o tempo da pessoa que está na escada rolante e todas pessoas que vão entrar nesse intervalo de tempo na mesma direção podem acessar a escada rolante.
+
+Como garantir que somente uma das direções está ativa de cada vez em cada uma das abordagens?
+
+Threads: 
+Para garantir que somente uma das direções está ativa eu começo com uma direção e vou verificando todas as pessoas que estão no intervalo permitido e querem ir na mesma direção e caso uma pessoa queira acessar a escada em outra direção eu armazena essa pessoa em uma lista de espera para ser executada depois da escada estiver vazia.
+
+Discorra sobre as diferenças entre as implementações utilizando threads e processos e diga qual foi mais eficiente na solução do problema, justificando sua resposta.
+
+A implementação com threads fez mais sentido para mim por conta do da thread pode acessar um espaço de memória compartilhada assim não foi necessário criar pipes para fazer a comunicação entre os processos.
