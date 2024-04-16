@@ -92,7 +92,14 @@ int main() {
     return 1;
   }
 
-  printf("%d", endTime);
+  FILE *saida = fopen("saida.txt", "w");
+  if (saida == NULL) {
+    printf("Erro ao abrir arquivo de saida\n");
+    return 1;
+  }
+
+  fprintf(saida, "%d", endTime);
+  fclose(saida);
 
   return 0;
 }
