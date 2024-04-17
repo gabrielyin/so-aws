@@ -14,6 +14,7 @@ até
 58) TIMEOUT
 
 Problemas no código
+
 O código não funciona quando mais de uma pessoa entra na fila de espera pois a última pessoa que entra na fila de espera sempre vai sobscrever a pessoa que já está na fila. Então o problema acontece quando a direção da escada rolante troca e a fila de espera não é executado da maneira correta com todas as pessoas.
 
 Qual a estratégia que você utilizou para evitar que duas pessoas acessem a escada rolante ao mesmo tempo em cada abordagem?
