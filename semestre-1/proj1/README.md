@@ -13,6 +13,11 @@ até
 
 58) TIMEOUT
 
+Como compilar
+- gcc main.c
+- ./a.out
+- repetir esses passos para todas as entradas
+
 Problemas no código
 
 O código não funciona quando mais de uma pessoa entra na fila de espera pois a última pessoa que entra na fila de espera sempre vai sobscrever a pessoa que já está na fila. Então o problema acontece quando a direção da escada rolante troca e a fila de espera não é executado da maneira correta com todas as pessoas.
