@@ -11,12 +11,6 @@ conta from, to;
 int valor;
 pthread_mutex_t mutex;
 
-struct transfers {
-  conta from;
-  conta to;
-  int valor;
-};
-
 void *transferenciaFromTo(void *arg) {
   pthread_mutex_lock(&mutex);
   if (from.saldo >= valor) {
