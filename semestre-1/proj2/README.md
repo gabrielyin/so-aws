@@ -8,7 +8,42 @@
 - Toda vez que uma transação acontece o mutex trava o acesso até a transação for finalizada de fato e só após a transação é concluida a thread destrava o acesso e assim outras threads podem concluir as suas transações
 ## Execução do código
 ### A conta to pode receber mais de uma transferência simultânea;
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/633c3430-b380-426e-9cc2-b76ea2c52a34)
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/b58743c5-7e52-48be-870e-985967287fa2)
+
 ### A conta from pode enviar mais de uma transferência simultânea;
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/633c3430-b380-426e-9cc2-b76ea2c52a34)
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/b58743c5-7e52-48be-870e-985967287fa2)
+
 ### A conta from não pode enviar dinheiro se não tiver mais saldo;
-### A conta to pode trocar de ordem com a conta from, ou seja, a conta que enviava pode receber e a conta que recebia pode enviar;
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/c3754b89-8219-4edc-b934-bb17de1105c4)
+
+### A conta to pode trocar de ordem com a conta from, ou seja, a conta que enviava pode receber e a conta que recebia pode enviar
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/da024a74-1863-424b-9066-55e96d5a7e07)
+
 ### Poderão ser realizadas até 100 transações simultâneas de transferência.
+
+
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/7d714dde-b87f-497d-9c19-e46fd35c5574)
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/29774d79-dcad-4e5f-addf-f05d047da957)
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/b7564a28-ef3b-4b28-a3fc-3db05abeb295)
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/bb8a0823-fbd2-4356-addb-44c2cdf8ff54)
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/b79042b1-f716-411a-ac2e-9405790b3056)
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/d72aad12-eefa-4944-baa2-b5ac7d4b999d)
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/827763d9-fd5e-4764-9eda-db5ca8977438)
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/faa331e9-8e31-446e-b699-b558178f150a)
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/5bd22d4c-b838-4bb7-874a-2e47ccf9109a)
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/4bd8a825-c708-4495-9769-8ba1bc0496e5)
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/60ffa1d5-6dda-44dd-ae42-c995fa2fd3c1)
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/1aae221e-da87-43aa-8953-d09190658bd3)
+
+
+
+
+
+
+
+
+
+
+
