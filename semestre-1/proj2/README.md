@@ -8,10 +8,12 @@
 - Toda vez que uma transação acontece o mutex trava o acesso até a transação for finalizada de fato e só após a transação é concluida a thread destrava o acesso e assim outras threads podem concluir as suas transações
 ## Execução do código
 ### A conta to pode receber mais de uma transferência simultânea;
+Conta to recebendo 60 transferências da conta from
 ![image](https://github.com/gabrielyin/so-aws/assets/70323043/633c3430-b380-426e-9cc2-b76ea2c52a34)
 ![image](https://github.com/gabrielyin/so-aws/assets/70323043/b58743c5-7e52-48be-870e-985967287fa2)
 
 ### A conta from pode enviar mais de uma transferência simultânea;
+Conta from enviando 60 transferências para a conta to
 ![image](https://github.com/gabrielyin/so-aws/assets/70323043/633c3430-b380-426e-9cc2-b76ea2c52a34)
 ![image](https://github.com/gabrielyin/so-aws/assets/70323043/b58743c5-7e52-48be-870e-985967287fa2)
 
@@ -22,6 +24,8 @@
 ![image](https://github.com/gabrielyin/so-aws/assets/70323043/da024a74-1863-424b-9066-55e96d5a7e07)
 
 ### Poderão ser realizadas até 100 transações simultâneas de transferência.
+Realizando 100 transações simultâneas
+![image](https://github.com/gabrielyin/so-aws/assets/70323043/c099c04c-9ab0-44dd-80fb-3431d2c50eaf)
 
 
 ![image](https://github.com/gabrielyin/so-aws/assets/70323043/7d714dde-b87f-497d-9c19-e46fd35c5574)
