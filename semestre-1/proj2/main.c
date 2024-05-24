@@ -51,12 +51,14 @@ int main(void) {
 
   valor = 10;
 
+  pthread_mutex_init(&mutex, NULL);
+
   for (int i = 0; i < 60; i++) {
     pthread_create(&threads[i], NULL, transferenciaFromTo, NULL);
   }
 
   for (int i = 0; i < 40; i++) {
-    pthread_create(&threads[i], NULL, transferenciaToFrom, NULL);
+    pthread_create(&threads[60 + i], NULL, transferenciaToFrom, NULL);
   }
 
   for (int i = 0; i < 100; i++) {
