@@ -10,22 +10,54 @@
 ### A conta to pode receber mais de uma transferência simultânea;
 Conta to recebendo 60 transferências da conta from
 ![image](https://github.com/gabrielyin/so-aws/assets/70323043/633c3430-b380-426e-9cc2-b76ea2c52a34)
+#### Como compilar
+- Se necessário altere o valor do saldo das contas from e to nas linhas 'from.saldo' e 'to.saldo'
+- Para alterar o valor de cada transferência altere a variável valor
+- No primeiro for defina a quantidade de transferências
+- No segundo for defina a quantidade de transferências da conta to para from (100 - quantidade) e altere o o valor adicionado no i para o mesmo valor da quantidade de transferências definida no primeiro for loop
+- gcc main.c
+- ./a.out
 ![image](https://github.com/gabrielyin/so-aws/assets/70323043/b58743c5-7e52-48be-870e-985967287fa2)
 
 ### A conta from pode enviar mais de uma transferência simultânea;
 Conta from enviando 60 transferências para a conta to
 ![image](https://github.com/gabrielyin/so-aws/assets/70323043/633c3430-b380-426e-9cc2-b76ea2c52a34)
+#### Como compilar
+- Se necessário altere o valor do saldo das contas from e to nas linhas 'from.saldo' e 'to.saldo'
+- Para alterar o valor de cada transferência altere a variável valor
+- No primeiro for defina a quantidade de transferências
+- No segundo for defina a quantidade de transferências da conta to para from (100 - quantidade) e altere o o valor adicionado no i para o mesmo valor da quantidade de transferências definida no primeiro for loop
+- gcc main.c
+- ./a.out
 ![image](https://github.com/gabrielyin/so-aws/assets/70323043/b58743c5-7e52-48be-870e-985967287fa2)
 
 ### A conta from não pode enviar dinheiro se não tiver mais saldo;
+#### Como compilar
+- Se necessário altere o valor do saldo das contas from e to nas linhas 'from.saldo' e 'to.saldo'
+- Altere a variável valor para 200 assim rapidamente o saldo vai ser insuficiente em algum momento
+- gcc main.c
+- ./a.out
 ![image](https://github.com/gabrielyin/so-aws/assets/70323043/c3754b89-8219-4edc-b934-bb17de1105c4)
 
 ### A conta to pode trocar de ordem com a conta from, ou seja, a conta que enviava pode receber e a conta que recebia pode enviar
+#### Como compilar
+- Se necessário altere o valor do saldo das contas from e to nas linhas 'from.saldo' e 'to.saldo'
+- No primeiro for defina a quantidade de transferências
+- No segundo for defina a quantidade de transferências da conta to para from (100 - quantidade) e altere o o valor adicionado no i para o mesmo valor da quantidade de transferências definida no primeiro for loop (para que troca de ordem acontece é necessário que as quantidades nos dois for loops seja maior que 1)
+- gcc main.c
+- ./a.out
 ![image](https://github.com/gabrielyin/so-aws/assets/70323043/da024a74-1863-424b-9066-55e96d5a7e07)
 
 ### Poderão ser realizadas até 100 transações simultâneas de transferência.
 Realizando 100 transações simultâneas
 ![image](https://github.com/gabrielyin/so-aws/assets/70323043/c099c04c-9ab0-44dd-80fb-3431d2c50eaf)
+#### Como compilar
+- Se necessário altere o valor do saldo das contas from e to nas linhas 'from.saldo' e 'to.saldo'
+- Para alterar o valor de cada transferência altere a variável valor
+- No primeiro for defina a quantidade de transferências
+- No segundo for defina a quantidade de transferências da conta to para from (100 - quantidade) e altere o o valor adicionado no i para o mesmo valor da quantidade de transferências definida no primeiro for loop (a soma das transferências tem que dar 100 para simular 100 transferências simultâneas)
+- gcc main.c
+- ./a.out
 
 
 ![image](https://github.com/gabrielyin/so-aws/assets/70323043/7d714dde-b87f-497d-9c19-e46fd35c5574)
