@@ -13,12 +13,13 @@ pthread_mutex_t mutex;
 
 void *transferenciaFromTo(void *arg) {
   pthread_mutex_lock(&mutex);
+  printf("\n-----TRANSFERENCIA 10,00 FROM TO-----\n");
   if (from.saldo >= valor) {
     from.saldo -= valor;
     to.saldo += valor;
-    printf("Tranferencia realizada com sucesso\n");
-    printf("Saldo da conta 1 %d\n", from.saldo);
-    printf("Saldo da conta 2 %d\n", to.saldo);
+    printf("\nTranferencia realizada com sucesso\n");
+    printf("Saldo da conta FROM %d\n", from.saldo);
+    printf("Saldo da conta TO %d\n", to.saldo);
   } else {
     printf("Saldo insuficiente\n");
   }
@@ -28,12 +29,13 @@ void *transferenciaFromTo(void *arg) {
 
 void *transferenciaToFrom(void *arg) {
   pthread_mutex_lock(&mutex);
+  printf("\n-----TRANSFERENCIA 10,00 TO FROM-----\n");
   if (to.saldo >= valor) {
     to.saldo -= valor;
     from.saldo += valor;
-    printf("Tranferencia realizada com sucesso\n");
-    printf("Saldo da conta 1 %d\n", to.saldo);
-    printf("Saldo da conta 2 %d\n", from.saldo);
+    printf("\nTranferencia realizada com sucesso\n");
+    printf("Saldo da conta FROM %d\n", from.saldo);
+    printf("Saldo da conta TO %d\n", to.saldo);
   } else {
     printf("Saldo insuficiente\n");
   }
@@ -42,24 +44,22 @@ void *transferenciaToFrom(void *arg) {
 }
 
 int main(void) {
-  pthread_t threads[10];
+  pthread_t threads[100];
 
-  from.saldo = 100;
-  to.saldo = 100;
+  from.saldo = 1000;
+  to.saldo = 1000;
 
-  printf("Transferindo 10 para a conta 2\n");
   valor = 10;
 
-  for (int i = 0; i < 10; i++) {
+  for (int i = 0; i < 60; i++) {
     pthread_create(&threads[i], NULL, transferenciaFromTo, NULL);
   }
 
-  printf("Transferindo 10 para a conta 1\n");
-  for (int i = 0; i < 2; i++) {
+  for (int i = 0; i < 40; i++) {
     pthread_create(&threads[i], NULL, transferenciaToFrom, NULL);
   }
 
-  for (int i = 0; i < 12; i++) {
+  for (int i = 0; i < 100; i++) {
     pthread_join(threads[i], NULL);
   }
 
