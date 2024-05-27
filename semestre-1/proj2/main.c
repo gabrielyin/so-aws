@@ -1,13 +1,11 @@
 #include <pthread.h>
 #include <stdio.h>
 
-struct c {
+struct conta {
   int saldo;
 };
 
-typedef struct c conta;
-
-conta from, to;
+struct conta from, to;
 int valor;
 pthread_mutex_t mutex;
 
