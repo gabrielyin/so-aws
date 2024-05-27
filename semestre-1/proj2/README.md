@@ -9,6 +9,7 @@
 ## Execução do código
 ### A conta to pode receber mais de uma transferência simultânea;
 Conta to recebendo 60 transferências da conta from
+
 ![image](https://github.com/gabrielyin/so-aws/assets/70323043/633c3430-b380-426e-9cc2-b76ea2c52a34)
 #### Como compilar
 - Se necessário altere o valor do saldo das contas from e to nas linhas 'from.saldo' e 'to.saldo'
