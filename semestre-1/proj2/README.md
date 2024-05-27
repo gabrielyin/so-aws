@@ -1,4 +1,4 @@
-## Projeto 2 - Gabriel Shihao Chen Yin
+## Projeto 2 - Gabriel Shihao Chen Yin 10408981
 ## Como funciona o código
 - As duas contas to e from são são do tipo conta e dentro dessa struct é armazenado o saldo de cada conta.
 - A função "transferenciaFromTo" é responsável por fazer as transação da conto from para conta to e a função "transferenciaToFrom" é responsável por fazer as transação da conto to para conta from
